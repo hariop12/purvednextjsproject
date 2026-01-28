@@ -1,0 +1,265 @@
+/* ===== MAIN LAYOUT ===== */
+.admin-layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ===== SIDEBAR FIX ===== */
+.admin-sidebar {
+  width: 260px;
+  min-width: 260px;
+  background: linear-gradient(180deg, #154474, #0f2f3a);
+  color: white;
+}
+
+/* ===== CONTENT AREA FIX ===== */
+.admin-content {
+  flex: 1;
+  background: #f4f7fa;
+  padding: 24px 28px;
+  overflow-y: auto;
+}
+
+/* ===== HEADER FIX ===== */
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.admin-brand {
+  font-size: 22px;
+  font-weight: 600;
+  color: #154474;
+}
+
+.admin-search {
+  width: 260px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+}
+
+/* ===== SECTION TITLE ===== */
+.admin-section-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 16px 0;
+  color: #0f172a;
+}
+
+/* ===== DASHBOARD STATS ===== */
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* ===== STAT CARD ===== */
+.admin-stat-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+}
+
+.admin-stat-card h4 {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.admin-stat-card p {
+  font-size: 30px;
+  font-weight: 600;
+  color: #154474;
+}
+
+/* ===== LIST LAYOUT ===== */
+.admin-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ===== ROW CARD ===== */
+.admin-row {
+  background: white;
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-row-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-row-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #154474;
+}
+
+.admin-row-meta {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.admin-tag {
+  display: inline-block;
+  background: #e6f0f4;
+  color: #154474;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  width: fit-content;
+}
+
+/* ===== BUTTON ===== */
+.admin-btn {
+  background: #154474;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.admin-btn:hover {
+  background: #1e5b6f;
+}
+
+/* ================= ADMIN LOGIN FIX ================= */
+
+.admin-login {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #154474, #0f2f3a);
+}
+
+.admin-login-box {
+  width: 360px;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.admin-login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #154474;
+}
+
+.admin-login-box input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+}
+
+.admin-login-box input:focus {
+  outline: none;
+  border-color: #154474;
+}
+
+.admin-login-box button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background: #154474;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.admin-login-box button:hover {
+  background: #1e5b6f;
+}
+
+.admin-sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-sidebar button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  text-align: left;
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.admin-sidebar button.active {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.admin-btn {
+  background: #2563eb;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-input,
+.admin-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+.admin-content input,
+.admin-content textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 14px;
+}
+
+.admin-content textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.admin-content button {
+  padding: 10px 16px;
+  background: #0b5ed7;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-content button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
